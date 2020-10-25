@@ -36,7 +36,7 @@ async def leave(ctx):
     await ctx.send("ボイスチャンネルから切断しました。")
 
 
-@bot.command(aliases=["play"])
+@bot.command()
 async def play(ctx):
     """指定された音声ファイルを流します。"""
     voice_client = ctx.message.guild.voice_client
